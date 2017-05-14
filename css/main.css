@@ -10,12 +10,12 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
-body {
+html, body {
     height: 100%;
-    max-height: 1920px;
 }
+
 html, html a {
+
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     color: #212121;
@@ -313,9 +313,8 @@ a.unitLinks {
     margin-left: 175px;
     margin-top: 125px;
     margin-bottom: 125px;
-    height: auto !important;
     width: 1200px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .subFrameHolder {
