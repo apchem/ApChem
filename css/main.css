@@ -304,16 +304,17 @@ a.unitLinks {
 }
 
 .iframe {
-    margin-left: 25%;
-    margin-right: 25%;
+    overflow: hidden;
+    border: none;
     min-height: 100%;
     background-color: #E0E0E0;
 }
 
 .frameHolder {
+    margin-left: 25%;
     border: dashed blue 2px;
     margin-top: 125px;
-    max-width: 1920px;
+    max-width: 925px;
     overflow-x: hidden;
 }
 
@@ -333,7 +334,9 @@ a.unitLinks {
 
 }
 
-
+html::-webkit-scrollbar {
+    display: none;
+}
 
 
 
