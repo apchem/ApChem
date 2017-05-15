@@ -25,12 +25,12 @@
 <body style="background-color: #E0E0E0;">
 
 
-<div style="width: inherit; background-color: #23272A; height: 211px;">
+<div style="width: inherit; background-color: #23272A; height: 211px; position: relative; z-index: 1000;">
         <span class="navContainer" >
             Mrs. Adam's AP Chemistry
         </span>
 
-    <div class="navBar">
+    <div class="navBar" >
         <nav class="navigation">
             <ul>
                 <li>
@@ -60,14 +60,14 @@
 </div>
 
 
-<div style="background-color: #2C2F33; max-width: 350px; border-top: solid thin #000000;padding-bottom: 3.2em; position: fixed;">
+<div style="background-color: #2C2F33; max-width: 350px; border-top: solid thin #000000;padding-bottom: 250px; position: fixed; margin-top: -211px;">
 
-    <p style="text-align: center; color: #ffffff; padding: 15px; font-size: 25px;">
+    <p style="text-align: center; color: #ffffff; padding: 15px; font-size: 25px; margin-top: 211px;">
         Units
     </p>
 
     <ul class="units" >
-        <button class="loadiframe" id="b1" data-src="https://kanoka42.github.io/units/one.html" data-width="1200" data-height="1700">Unit 1: Qualitative and Quantitative Properties</button>
+        <button class="loadiframe" id="b1" data-src="https://kanoka42.github.io/units/one.html" data-width="2400" data-height="2000">Unit 1: Qualitative and Quantitative Properties</button>
     </ul>
 
     <ul class="units">
@@ -132,10 +132,8 @@
 
 
 <div class="frameHolder">
-    <iframe class="iframe" id='frame' frameborder="0" scrolling="no"></iframe>
+    <iframe class="iframe" id='frame' frameborder="0" scrolling="yes"></iframe>
 </div>
-
-
 <script>
     $('.loadiframe').on('click', function(){
         var src = $(this).data('src'),

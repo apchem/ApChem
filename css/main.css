@@ -12,6 +12,7 @@
 
 html, body {
     height: 100%;
+    max-width: 1920px;
 }
 
 html, html a {
@@ -305,21 +306,15 @@ a.unitLinks {
 .iframe {
     margin-left: 25%;
     margin-right: 25%;
-    max-width: 1200px;
     min-height: 100%;
+    background-color: #E0E0E0;
 }
 
 .frameHolder {
-    margin-left: 175px;
+    border: dashed blue 2px;
     margin-top: 125px;
-    margin-bottom: 125px;
-    width: 1200px;
+    max-width: 1920px;
     overflow-x: hidden;
-}
-
-.subFrameHolder {
-    margin-top: -650px;
-    margin-left: 150px;
 }
 
 
@@ -338,9 +333,6 @@ a.unitLinks {
 
 }
 
-iframe {
-    height: 80vh;
-}
 
 
 
