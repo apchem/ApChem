@@ -14,7 +14,7 @@
 
     html, body {
         height: 100%;
-        max-width: 480px;
+        max-width: 360px;
     }
 
     html, html a {
@@ -135,14 +135,6 @@
        Author's custom styles
        ========================================================================== */
 
-
-    .navContainer {
-        position: relative;
-        top: 30px;
-        font-size: 22px;
-        color: white;
-        font-family: Cookie, sans-serif;
-    }
 
     nav .navigation {
 
