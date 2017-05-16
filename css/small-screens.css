@@ -1,0 +1,505 @@
+@media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
+
+    /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+    /*
+     * What follows is the result of much research on cross-browser styling.
+     * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+     * Kroc Camen, and the H5BP dev community and team.
+     */
+
+    /* ==========================================================================
+       Base styles: opinionated defaults
+       ========================================================================== */
+
+    html, body {
+        height: 100%;
+        max-width: 480px;
+    }
+
+    html, html a {
+
+        -webkit-font-smoothing: antialiased;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+        color: #212121;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+
+    @font-face {
+        font-family: "Cookie";
+        src: url(../font/Cookie-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: "Futura Light";
+        src: url(../font/Futura-Light.ttf);
+    }
+
+    @font-face {
+        font-family: "Helvetica Light";
+        src: url(../font/Helvetica-Light.ttf);
+    }
+
+    /*
+     * Remove text-shadow in selection highlight:
+     * https://twitter.com/miketaylr/status/12228805301
+     *
+     * These selection rule sets have to be separate.
+     * Customize the background color to match your design.
+     */
+
+    ::-moz-selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+
+    ::selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+
+    /*
+     * A better looking default horizontal rule
+     */
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    .link {
+        text-decoration: underline;
+        color: #212121;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+        color: #212121;
+    }
+
+    .link:visited {
+        text-decoration: underline;
+        color: #212121;
+    }
+    /*
+     * Remove the gap between audio, canvas, iframes,
+     * images, videos and the bottom of their containers:
+     * https://github.com/h5bp/html5-boilerplate/issues/440
+     */
+
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+        vertical-align: middle;
+    }
+
+    /*
+     * Remove default fieldset styles.
+     */
+
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*
+     * Allow only vertical resizing of textareas.
+     */
+
+    textarea {
+        resize: vertical;
+    }
+
+    /* ==========================================================================
+       Browser Upgrade Prompt
+       ========================================================================== */
+
+    .browserupgrade {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+    }
+
+    /* ==========================================================================
+       Author's custom styles
+       ========================================================================== */
+
+
+    .navContainer {
+        position: relative;
+        top: 30px;
+        font-size: 22px;
+        color: white;
+        font-family: Cookie, sans-serif;
+    }
+
+    nav .navigation {
+
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0px;
+        position: relative;
+        display: inline-table;
+        text-transform: uppercase;
+    }
+
+    nav ul a:hover {
+        background-color: #455A64;
+        transition: 0.3s;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .navBar  {
+        position: absolute;
+        display: block;
+        left: 34%;
+        float: left;
+        top: 150px;
+        text-decoration: none;
+        margin-top: -15px;
+    }
+
+    .navBar a {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #99AAB5;
+        font-size: 18px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        padding: 13px 60px 13px 60px;
+        margin-right: -5px;
+    }
+
+
+    .navBar .navigation .active a{
+        background-color: #455A64;
+    }
+
+
+
+
+    .leftFold {
+        width: 0;
+        height: 0;
+        margin-top: -15px;
+        margin-right: -4px;
+        float: right;
+        border-style: solid;
+        border-width: 15px 15px 0 0;
+        border-color: #006b6d transparent transparent transparent;
+    }
+
+    .rightFold {
+        width: 0;
+        height: 0;
+        margin-left: 0px;
+        margin-top: 2px;
+        border-style: solid;
+        border-width: 0 15px 15px 0;
+        border-color: transparent #006b6d transparent transparent;
+    }
+
+    .titleText {
+        font-family: Futura Light, sans-serif;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.2em;
+
+    }
+
+    .bodyTextHolder {
+        position: absolute;
+        margin-top: 100px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .bodyText {
+        max-width: 586px;
+        line-height: 1.9em;
+        text-align: center;
+        font-family: "Helvetica Light", sans-serif;
+        font-size: 15px;
+    }
+
+    .linkText {
+        font-family: "Helvetica Light", sans-serif;
+        font-size: 15px;
+        color: #212121;
+        text-decoration: underline;
+    }
+
+    .linkText:hover {
+        color: #212121;
+        text-decoration: underline;
+    }
+
+    .subText {
+        font-size: 11px;
+    }
+
+
+    /* Units */
+
+    .units {
+        font-family: "Helvetica Light";
+        font-size: 14px;
+        color: #ffffff;
+        margin-left: -5px;
+        padding: 5px;
+        text-decoration: none;
+
+    }
+
+    .units:hover {
+        cursor: hand;
+        text-decoration: none;
+        color: white;
+    }
+
+    a.unitLinks {
+    }
+    .unitLinks {
+        color: white;
+    }
+
+    .unitLinks:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+
+
+    /* color sections */
+
+
+
+    .loadiframe {
+        width: 100%;
+        background-color: #2C2F33;
+        border: none;
+    }
+
+    .loadiframe:hover {
+        background-color: #23272A;
+    }
+
+    .iframe {
+        overflow: hidden;
+        border: none;
+        min-height: 100%;
+        background-color: #E0E0E0;
+    }
+
+    .frameHolder {
+        margin-left: 25%;
+        border: dashed blue 2px;
+        margin-top: 125px;
+        max-width: 925px;
+        overflow-x: hidden;
+    }
+
+
+    .unitHeader {
+        font-family: "Helvetica Light", sans-serif;
+        border-bottom: 1px solid #000000;
+        text-decoration: none;
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+        font-size: 26px;
+        margin-top: 50px;
+
+    }
+    .unitBody {
+
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+    /* ==========================================================================
+       Helper classes
+       ========================================================================== */
+
+    /*
+     * Hide visually and from screen readers
+     */
+
+    .hidden {
+        display: none !important;
+    }
+
+    /*
+     * Hide only visually, but have it available for screen readers:
+     * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+     */
+
+    .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    /*
+     * Extends the .visuallyhidden class to allow the element
+     * to be focusable when navigated to via the keyboard:
+     * https://www.drupal.org/node/897638
+     */
+
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    /*
+     * Hide visually and from screen readers, but maintain layout
+     */
+
+    .invisible {
+        visibility: hidden;
+    }
+
+    /*
+     * Clearfix: contain floats
+     *
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    `contenteditable` attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that receive the `clearfix` class.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+
+    @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
+    }
+
+    /* ==========================================================================
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       http://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
+
+    @media print {
+        *,
+        *:before,
+        *:after,
+        *:first-letter,
+        *:first-line {
+            background: transparent !important;
+            color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
+
+        /*
+         * Don't show links that are fragment identifiers,
+         * or use the `javascript:` pseudo protocol
+         */
+
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
+
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+
+        /*
+         * Printing Tables:
+         * http://css-discuss.incutio.com/wiki/Printing_Tables
+         */
+
+        thead {
+            display: table-header-group;
+        }
+
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+
+        img {
+            max-width: 100% !important;
+        }
+
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
+    }
+
+
+}
