@@ -27,7 +27,12 @@ html, html a {
 
 @font-face {
     font-family: "Cookie";
-    src: url(../font/Cookie-Regular.ttf);
+    src: url(../font/Cookie/Cookie-Regular.ttf),
+         url(../font/Cookie/Cookie-Regular.eot),
+         url(../font/Cookie/Cookie-Regular.woff),
+         url(../font/Cookie/Cookie-Regular.svg);
+
+
 }
 
 @font-face {
