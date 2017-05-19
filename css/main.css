@@ -137,7 +137,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@media only screen and (max-width: 1920px), only screen and (max-device-width: 1920px) {
+@media only screen and (max-width: 1925px), only screen and (max-device-width: 1925px) {
 
     .navContainer {
         position: relative;
@@ -332,13 +332,18 @@ textarea {
 
     }
 
-    .unitBody {
 
+    #regUnits {
     }
 
     html::-webkit-scrollbar {
         display: none;
     }
+
+    .mobileUnits {
+        display: none;
+    }
+
 
 }
 
@@ -423,18 +428,19 @@ textarea {
    ========================================================================== */
 
 
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 365px), only screen and (max-device-width: 365px) {
     #regContainer {
         display: none;
     }
 
     #mobileContainer {
-        display: flex;
+        display: block;
     }
+
 
     .mobileNavContainer {
         position: absolute;
-        margin-left: 12%;
+        margin-left: 5%;
         top: 30px;
         font-size: 40px;
         color: white;
@@ -442,9 +448,21 @@ textarea {
     }
 
     .menuIcon {
-        display: inline-block;
+        display: inline;
+        border: none;
+        background-color: inherit;
         color: #ffffff;
         padding: 10px;
+        margin-top: -15%;
+    }
+
+    .mobileUnits{
+        display: none;
+        background-color: #2C2F33;
+        max-width: 365px;
+        border-top: solid thin #000000;
+        padding-bottom: 250px;
+        position: relative;
     }
 
 
@@ -475,7 +493,7 @@ textarea {
         display: block;
         float: left;
         top: 150px;
-        left: 10%;
+        left: 12%;
         text-decoration: none;
         margin-top: -15px;
     }
@@ -486,7 +504,7 @@ textarea {
         background-color: #99AAB5;
         font-size: 12px;
         font-family: 'Open Sans Condensed', sans-serif;
-        padding: 6px 30px 6px 30px;
+        padding: 6px 20px 6px 20px;
         margin-right: -5px;
     }
 
@@ -496,6 +514,12 @@ textarea {
 
     #regUnits{
         display: none;
+    }
+
+    .frameHolder {
+
+        max-width: 360px;
+        margin-left: -0.1%;
     }
 
 
