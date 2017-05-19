@@ -15,6 +15,12 @@ html, body {
     max-width: 1920px;
 }
 
+iframe, object, embed {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 html, html a {
 
     -webkit-font-smoothing: antialiased;
@@ -428,7 +434,7 @@ textarea {
    ========================================================================== */
 
 
-@media only screen and (max-width: 365px), only screen and (max-device-width: 365px) {
+@media only screen and (min-width: 345px), only screen and (max-device-width: 380px) {
     #regContainer {
         display: none;
     }
@@ -440,9 +446,9 @@ textarea {
 
     .mobileNavContainer {
         position: absolute;
-        margin-left: 5%;
-        top: 30px;
-        font-size: 40px;
+        margin-left: 11%;
+        top: 40px;
+        font-size: 35px;
         color: white;
         font-family: Cookie, sans-serif;
     }
@@ -510,7 +516,7 @@ textarea {
         position: absolute;
         display: block;
         float: left;
-        top: 150px;
+        top: 125px;
         left: 12%;
         text-decoration: none;
         margin-top: -15px;
@@ -560,6 +566,147 @@ textarea {
 
 
 }
+
+
+
+
+
+
+@media only screen and (max-width: 485px), only screen and (max-device-width: 485px) {
+    #regContainer {
+        display: none;
+    }
+
+    #mobileContainer {
+        display: block;
+    }
+
+
+    .mobileNavContainer {
+        position: absolute;
+        margin-left: 15%;
+        top: 30px;
+        font-size: 40px;
+        color: white;
+        font-family: Cookie, sans-serif;
+    }
+
+    .menuIcon {
+        display: inline;
+        border: none;
+        background-color: inherit;
+        color: #ffffff;
+        padding-left: 15px;
+        margin-top: -13%;
+    }
+
+    .mobileUnits{
+        display: none;
+        background-color: #2C2F33;
+        max-width: 480px;
+        border-top: solid thin #000000;
+        padding-bottom: 250px;
+        position: relative;
+    }
+
+
+    .linkText {
+        font-family: "Helvetica Light", sans-serif;
+        font-size: 15px;
+        color: #212121;
+        text-decoration: underline;
+        word-wrap: normal;
+    }
+
+    .linkText:hover {
+        color: #212121;
+        text-decoration: underline;
+    }
+
+    .loadiframe {
+        background-color: #2C2F33;
+        border: none;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0px;
+        position: relative;
+        display: inline-table;
+        text-transform: uppercase;
+    }
+
+    nav ul a:hover {
+        background-color: #455A64;
+        transition: 0.3s;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    #subContainer {
+        display: none;
+    }
+    nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .mobileNavBar {
+        position: absolute;
+        display: block;
+        float: left;
+        top: 150px;
+        left: 12%;
+        text-decoration: none;
+        margin-top: -15px;
+    }
+
+    .mobileNavBar a {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #99AAB5;
+        font-size: 15px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        padding: 6px 25px 6px 25px;
+        margin-right: -5px;
+    }
+
+    .mobileNavBar .mobileNavigation .active a {
+        background-color: #455A64;
+    }
+
+    #regUnits{
+        display: none;
+    }
+
+    .frameHolder {
+        margin-top: 0px;
+        max-width: 480px;
+        margin-left: -0.1%;
+    }
+
+
+    /* Units */
+    .units {
+        font-family: "Helvetica Light";
+        font-size: 14px;
+        color: #ffffff;
+        padding: 5px;
+        text-decoration: none;
+
+    }
+
+    .units:hover {
+        cursor: hand;
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+}
+
 
 
 @media print,
