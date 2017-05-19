@@ -263,6 +263,7 @@ textarea {
 
     .subText {
         font-size: 11px;
+        word-wrap: break-word;
     }
 
     /* Units */
@@ -314,7 +315,6 @@ textarea {
 
     .frameHolder {
         margin-left: 25%;
-        border: dashed blue 2px;
         margin-top: 125px;
         max-width: 925px;
         overflow-x: hidden;
@@ -466,6 +466,21 @@ textarea {
     }
 
 
+    .linkText {
+        font-family: "Helvetica Light", sans-serif;
+        font-size: 15px;
+        color: #212121;
+        text-decoration: underline;
+        word-wrap: normal;
+    }
+
+    .linkText:hover {
+        color: #212121;
+        text-decoration: underline;
+    }
+
+
+
 
     nav ul {
         list-style: none;
@@ -482,6 +497,9 @@ textarea {
         color: #ffffff;
     }
 
+    #subContainer {
+        display: none;
+    }
     nav ul:after {
         content: "";
         clear: both;
@@ -517,9 +535,26 @@ textarea {
     }
 
     .frameHolder {
-
+        margin-top: 0px;
         max-width: 360px;
         margin-left: -0.1%;
+    }
+
+
+    /* Units */
+    .units {
+        font-family: "Helvetica Light";
+        font-size: 14px;
+        color: #ffffff;
+        padding: 5px;
+        text-decoration: none;
+
+    }
+
+    .units:hover {
+        cursor: hand;
+        text-decoration: none;
+        color: white;
     }
 
 
