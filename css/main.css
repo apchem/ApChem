@@ -144,44 +144,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
 
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
 @media only screen and (max-width: 1925px), only screen and (max-device-width: 1925px) {
@@ -278,6 +241,7 @@ textarea {
         font-size: 36px;
         text-align: center;
         letter-spacing: 0.2em;
+        margin-top: 30px;
 
     }
 
@@ -301,6 +265,10 @@ textarea {
         font-size: 15px;
         color: #212121;
         text-decoration: underline;
+    }
+
+    .topFix {
+        margin-top: 25%;
     }
 
     .linkText:hover {
@@ -395,7 +363,56 @@ textarea {
     .mobileUnits {
         display: none;
     }
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
 
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    .hr {
+        border:1px solid #F2668F;
+        height:0.5%;
+        background-color:#F2668F;
+        margin-left: 65px;
+    }
+
+    .botFix {
+        padding-top: 250px;
+    }
 
 }
 
@@ -481,6 +498,47 @@ textarea {
 
 
 @media only screen and (max-width: 345px), only screen and (max-device-width: 380px) {
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 30px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
     #regContainer {
         display: none;
     }
@@ -492,7 +550,7 @@ textarea {
 
     .mobileNavContainer {
         position: absolute;
-        margin-left: 5%;
+        left: -8%;
         top: 40px;
         font-size: 35px;
         color: white;
@@ -608,6 +666,36 @@ textarea {
     }
 
 
+    .bodyTextHolder {
+        position: relative;
+        margin-top: 175px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .bodyText {
+        max-width: 340px;
+        line-height: 1.9em;
+        text-align: center;
+        font-family: "Helvetica Light", sans-serif;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .hr {
+        border:1px solid #F2668F;
+        height:0.5%;
+        background-color:#F2668F;
+        margin-left: -1%;
+    }
+
+    .topFix {
+        margin-top: -30%;
+    }
+
+    .botFix {
+        padding-top: 0px;
+    }
 
 }
 
@@ -648,6 +736,7 @@ textarea {
         display: none;
         background-color: #2C2F33;
         max-width: 480px;
+        margin-left: 15%;
         border-top: solid thin #000000;
         padding-bottom: 250px;
         position: relative;
@@ -701,7 +790,7 @@ textarea {
         display: block;
         float: left;
         top: 150px;
-        left: 12%;
+        left: 20%;
         text-decoration: none;
         margin-top: -15px;
     }
@@ -747,6 +836,32 @@ textarea {
         color: white;
     }
 
+
+    .bodyTextHolder {
+        position: relative;
+        margin-top: 175px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .bodyText {
+        max-width: 460px;
+        line-height: 1.9em;
+        text-align: center;
+        font-family: "Helvetica Light", sans-serif;
+        font-size: 15px;
+    }
+
+    .hr {
+        border:1px solid #F2668F;
+        height:0.5%;
+        background-color:#F2668F;
+        margin-left: -1%;
+    }
+
+    .topFix {
+       margin-top: -15%;
+    }
 
 
 }
